@@ -1,8 +1,8 @@
 <style>
 
 .whatsapp-btn {
-cursor:pointer;
-position:fixed;
+
+
 bottom:90px;
 right:90px;
 display:block;
@@ -28,7 +28,7 @@ background:#fff;
 box-shadow:0 20px 25px rgba(000);
 max-width:-webkit-fill-available;
 font-family:Helvetica, sans-serif;
-font-size:90%;
+font-size:100%;
 border-radius:4px;
 visibility:hidden;
 opacity:0;
@@ -36,27 +36,24 @@ transition:.3s;
 }
 #whatsapp.toggle {
 font-size: 100%;
-padding: 50px;
+padding: 30px;
 position: relative;
 visibility: initial;
 opacity: unset;
 }
-@media(max-width:320px) {
-.whatsapp-btn {
-bottom:10px;
-right:10px;
+
 }
 #whatsapp.toggle {
-bottom:80px;
-right:10px;
-visibility:visible;
+bottom:20;
+right:20;
+
 opacity:1;
 }
 }
 #whatsapp label,
 #whatsapp a {
 display:block;
-margin:15px;
+margin:20px;
 text-decoration:none;
 }
 #whatsapp input,
@@ -68,26 +65,23 @@ width:100%;
 padding:20px;
 border-radius:2px;
 }
-#whatsapp input.nama {
-text-transform:capitalize;
+
 }
-#whatsapp input:focus,
-#whatsapp textarea:focus {
-border:1px solid #ddd;
+
 }
 #whatsapp textarea {
-min-height:80px;
+
 resize: none;
 }
 #whatsapp a {
 cursor:pointer;
 display:block;
-padding:10px;
+padding:20px;
 font-weight:bold;
 text-align:center;
 background:#25D366;
 color:white;
-border-radius:2px;
+border-radius:20px;
 }
 #whatsapp a:hover {
 background:#20b558;
