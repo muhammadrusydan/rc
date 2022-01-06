@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .container {
   position: relative;
-  padding-top: 74px;
+  padding-top: 50px;
   text-align: center;
 }
 #hero h1 {
@@ -405,9 +405,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin: 10px 0 0 0;
   padding: 0;
-  line-height: 1;
+  line-height: 2;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 28px;
 }
 #hero .icon-box h3 a {
   color: #fff;
