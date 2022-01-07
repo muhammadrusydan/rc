@@ -116,24 +116,82 @@ background:#20b558;
       <h2 class="alert alert-success text-center mt-3">Isi Data Undangan</h2>
     </div>
     
+
+
+
+
+
+
+
+
+
+    <!-- Label -->
 <form>
   <div class="form-group">
-<h6 class="alert alert-success text-center">
-  <label>Nama :
-<input class="nama" type="text" placeholder="Tulis Nama Lengkap." />
+<h6 class="alert alert-success text-right">
+  <label>Pilih Desain :
+<input class="pilihdsain" type="text" placeholder="contoh: tema1" />
 </label>
-<label>Alamat :
-<input class="alamat" type="alamat" placeholder="contoh : Jl.Tamansari I RT 002/008 No.1 Kel.Pekayon Kec.Ps Rebo Jak Tim." />
+<label>Nama Mempelai Wanita :
+<input class="namamempelaiwanita" type="text" placeholder="contoh: lania aprilani" />
 </label>
-<label>Nomor telepon :
-<input class="nomor" type="nomor" placeholder="contoh : 082225204112.." />
+<label>Nama Panggilan :
+<input class="namapanggilanwanita" type="text" placeholder="contoh : lani" />
 </label>
-<label>Jumlah order / paket :
-<textarea class="pesan" placeholder="contoh: 1 paket mainan pintar ebook.."></textarea>
-</label></h6>
+<label>Nama Ayah :
+<input class="namaayahwanita" placeholder="contoh: juanda" />
+</label>
+<label>Nama Ibu :
+  <input class="namaibuwanita" placeholder="contoh: nining sumarni" />
+  </label>
+  <label>Nama Mempelai Pria :
+    <input class="namamempelaipria" type="text" placeholder="contoh: lania aprilani" />
+    </label>
+    <label>Nama Panggilan :
+    <input class="namapanggilanpria" type="text" placeholder="contoh : lani" />
+    </label>
+    <label>Nama Ayah :
+    <input class="namaayahpria" placeholder="contoh: juanda" />
+    </label>
+    <label>Nama Ibu :
+      <input class="namaibupria" placeholder="contoh: nining sumarni" />
+      </label>
+  <label>Hari/Tgl Akad Nikah :
+    <input class="akadnikah" placeholder="contoh: nining sumarni" />
+    </label>
+    <label>Resepsi :
+      <input class="resepsi" placeholder="contoh: 08:00" />
+      </label>
+      <label>Waktu/Jam :
+        <input class="jam" placeholder="contoh: 08:00" />
+        </label>
+       <label>Lokasi :
+         <input class="lokasi" placeholder="contoh: Desa Rawa"/>
+       </label>
+       <label>Turut Mengundang :
+        <input class="turutmengundang" placeholder="contoh: H.engkos"/>
+      </label> </h6>
+
+
+
+
+
 <a class="submit">> KIRIM WHATSAPP</a>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Proses Kirim -->
 
 <script>
 $('.whatsapp-btn').click(function(){
@@ -148,21 +206,90 @@ if (event.which == 13) WhatsApp();
 var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 function WhatsApp() {
 var ph = '';
-if ($('#whatsapp .nama').val() == '') { // Cek Nama
-ph = $('#whatsapp .nama').attr('placeholder');
+
+
+
+
+
+
+if ($('#whatsapp .pilihdsain').val() == '') { // Cek Nama
+ph = $('#whatsapp .pilihdsain').attr('placeholder');
 alert('Silahkan tulis ' + ph);
-$('#whatsapp .nama').focus();
+$('#whatsapp .pilihdsain').focus();
 return false;
-} else if ($('#whatsapp .alamat').val() == '') { // Cek alamat
-ph = $('#whatsapp .alamat').attr('placeholder');
+} else if ($('#whatsapp .namamempelaiwanita').val() == '') { // Cek alamat
+ph = $('#whatsapp .namamempelaiwanita').attr('placeholder');
 alert('Silahkan tulis ' + ph);
-$('#whatsapp .alamat').focus();
+$('#whatsapp .namamempelaiwanita').focus();
 return false;
-} else if ($('#whatsapp .nomor').val() == '') { // Cek Nomor
-ph = $('#whatsapp .nomor').attr('placeholder');
+} else if ($('#whatsapp .namapanggilanwanita').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namapanggilanwanita').attr('placeholder');
 alert('Silahkan tulis ' + ph);
-$('#whatsapp .nomor').focus();
+$('#whatsapp .namapanggilanwanita').focus();
 return false;
+} else if ($('#whatsapp .namaayahwanita').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namaayahwanita').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .namaayahwanita').focus();
+return false;
+} else if ($('#whatsapp .namaibuwanita').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namaibuwanita').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .namaibuwanita').focus();
+return false;
+} else if ($('#whatsapp .namamempelaipria').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namamempelaipria').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .namamempelaipria').focus();
+return false;
+} else if ($('#whatsapp .namaayahpria').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namaayahpria').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .namaayahpria').focus();
+return false;
+} else if ($('#whatsapp .namaibupria').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namaibupria').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .namaibupria').focus();
+return false;
+} else if ($('#whatsapp .akadnikah').val() == '') { // Cek Nomor
+ph = $('#whatsapp .akadnikah').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .akadnikah').focus();
+return false;
+} else if ($('#whatsapp .resepsi').val() == '') { // Cek Nomor
+ph = $('#whatsapp .resepsi').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .resepsi').focus();
+return false;
+} else if ($('#whatsapp .jam').val() == '') { // Cek Nomor
+ph = $('#whatsapp .jam').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .jam').focus();
+return false;
+} else if ($('#whatsapp .lokasi').val() == '') { // Cek Nomor
+ph = $('#whatsapp .lokasi').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .lokasi').focus();
+return false;
+} else if ($('#whatsapp .turutmengundang').val() == '') { // Cek Nomor
+ph = $('#whatsapp .turutmengundang').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .turutmengundang').focus();
+return false;
+
+} else if ($('#whatsapp .pesan').val() == '') { // Cek Nomor
+ph = $('#whatsapp .namapanggilanpria').attr('placeholder');
+alert('Silahkan tulis ' + ph);
+$('#whatsapp .namapanggilanpria').focus();
+return false;
+
+
+
+
+
+
+
 } else if ($('#whatsapp .pesan').val() == '') { // Cek Pesan
 ph = $('#whatsapp .pesan').attr('placeholder');
 alert('Silahkan tulis ' + ph);
@@ -172,7 +299,7 @@ return false;
 if (!confirm("Kirim Ke WhatsApp?")) {
     window.open("https://www.whatsapp.com/download/");
 } else {
-    // Check Device (Mobile/Desktop)
+    // Check Device (Mobile/Desktop)s
     var url_wa = 'https://web.whatsapp.com/send';
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         url_wa = 'whatsapp://send/';
@@ -180,11 +307,30 @@ if (!confirm("Kirim Ke WhatsApp?")) {
     // Get Value
     var tujuan = $('#whatsapp .tujuan').val(),
             via_url = location.href,
-            nama = $('#whatsapp .nama').val(),
-            alamat = $('#whatsapp .alamat').val(),
-            nomor = $('#whatsapp .nomor').val(),
+            pilihdsain = $('#whatsapp .pilihdsain').val(),
+            namamempelaiwanita = $('#whatsapp .namamempelaiwanita').val(),
+            namapanggilanwanita = $('#whatsapp .namapanggilanwanita').val(),
+            namaayahwanita= $('#whatsapp .namaayahwanita').val(),
+            namaibuwanita= $('#whatsapp .namaibuwanita').val(),
+            namamempelaipria= $('#whatsapp .namamempelaipria').val(),
+            namapanggilanpria= $('#whatsapp .namapanggilanpria').val(),
+            namaayahpria= $('#whatsapp .namaayahpria').val(),
+            namaibupria= $('#whatsapp .namaibupria').val(),
+            akadnikah= $('#whatsapp .akadnikah').val(),
+            resepsi= $('#whatsapp .resepsi').val(),
+            jam= $('#whatsapp .jam').val(),
+            lokasi= $('#whatsapp .lokasi').val(),
+            turutmengundang= $('#whatsapp .turutmengundang').val(),
             pesan = $('#whatsapp .pesan').val();
-    $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order, saya *' + nama + '* %0A%0AAlamat:%20' + alamat +' %0A%0ANo.tlp:%20'+ nomor + ' %0A%0APaket:%20' + pesan + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
+
+    $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Pilihan Dsain Undangan: *' + pilihdsain + '* %0A%0ANama Mempelai Wanita:%20' + namamempelaiwanita +' %0A%0ANama Panggilan:%20'+ namapanggilanwanita + ' %0A%0ANama Ayah:%20' + namaayahwanita +' %0A%0ANama Ibu:%20' + namaibuwanita + ' %0A%0ANama Mempelai Pria:%20' + namamempelaipria +  ' %0A%0ANama Nama Panggilan:%20' + namapanggilanpria + ' %0A%0ANama Ayah:%20' + namaayahpria  +  ' %0A%0ANama Ayah:%20' + namaibupria + ' %0A%0AAkad Nikah:%20' + akadnikah + ' %0A%0AResepsi:%20' + resepsi +  ' %0A%0AJam:%20' + jam +  ' %0A%0ALokasi:%20' + lokasi + ' %0A%0ATurut Mengundang:%20' + turutmengundang   +   pesan + '%0A%0ASaya Menyatakan Data Di Atas Adalah Benar');
+
+
+
+
+
+
+  
     var w = 960,
             h = 540,
             left = Number((screen.width / 2) - (w / 2)),
