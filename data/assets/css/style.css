@@ -390,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 #hero .icon-box {
-  padding: 10px 5px;
+  padding: 5px 0px;
   transition: ease-in-out 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
@@ -572,7 +572,7 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
-  padding: 10px 20px;
+  padding: 10px 10px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -585,7 +585,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: 0.3s;
 }
 .services .icon-box .icon i {
@@ -595,7 +595,7 @@ section {
 }
 .services .icon-box h4 {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 24px;
 }
 .services .icon-box h4 a {
